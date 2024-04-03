@@ -1,0 +1,42 @@
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+input[type="radio"]{
+    display: none;
+    
+}
+
+label{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body{
+    background-image: url(img/);
+}
+
+
+.book-content{
+    display: none;
+    padding: 20px;
+    border: 1px solid #232323;
+    border-radius: 5px;
+    width: 70%;
+}
+
+
+
+#book1:checked ~ #content1,
+#book2:checked ~ #content2,
+#book3:checked ~ #content3{
+    display:block;
+}
